@@ -10,15 +10,23 @@ import UIKit
 import Alamofire
 
 class ViewController: UIViewController {
+    
+    var placeManager : PlaceManager = PlaceManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        retrieveData()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func retrieveData(){
+        print("retrieve data")
+        placeManager.getAllPlaces()
     }
 
 

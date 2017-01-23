@@ -13,6 +13,8 @@
 		3F0B4B591E36074900D5B266 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F0B4B571E36074900D5B266 /* Main.storyboard */; };
 		3F0B4B5B1E36074900D5B266 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F0B4B5A1E36074900D5B266 /* Assets.xcassets */; };
 		3F0B4B5E1E36074900D5B266 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F0B4B5C1E36074900D5B266 /* LaunchScreen.storyboard */; };
+		3FD9749A1E3613080031CB3E /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD974991E3613080031CB3E /* Place.swift */; };
+		3FD9749E1E3616C80031CB3E /* PlaceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD9749D1E3616C80031CB3E /* PlaceManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		3F0B4B5A1E36074900D5B266 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F0B4B5D1E36074900D5B266 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F0B4B5F1E36074900D5B266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FD974991E3613080031CB3E /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		3FD9749D1E3616C80031CB3E /* PlaceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceManager.swift; sourceTree = "<group>"; };
 		C3D30F4A17717299CC1F93F1 /* Pods_Saint_Quent_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Saint_Quent_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E05067A622FD6BEDCEB541FE /* Pods-Saint-Quent-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Saint-Quent-App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Saint-Quent-App/Pods-Saint-Quent-App.release.xcconfig"; sourceTree = "<group>"; };
 		E81D0C4039C90C1BBCFD2F1C /* Pods-Saint-Quent-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Saint-Quent-App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Saint-Quent-App/Pods-Saint-Quent-App.debug.xcconfig"; sourceTree = "<group>"; };
@@ -70,6 +74,8 @@
 		3F0B4B521E36074900D5B266 /* Saint-Quent-App */ = {
 			isa = PBXGroup;
 			children = (
+				3FD9749C1E36167F0031CB3E /* Manager */,
+				3FD9749B1E36166C0031CB3E /* Model */,
 				3F0B4B531E36074900D5B266 /* AppDelegate.swift */,
 				3F0B4B551E36074900D5B266 /* ViewController.swift */,
 				3F0B4B571E36074900D5B266 /* Main.storyboard */,
@@ -78,6 +84,22 @@
 				3F0B4B5F1E36074900D5B266 /* Info.plist */,
 			);
 			path = "Saint-Quent-App";
+			sourceTree = "<group>";
+		};
+		3FD9749B1E36166C0031CB3E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3FD974991E3613080031CB3E /* Place.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3FD9749C1E36167F0031CB3E /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				3FD9749D1E3616C80031CB3E /* PlaceManager.swift */,
+			);
+			name = Manager;
 			sourceTree = "<group>";
 		};
 		B513A40EA2CA5DBE943AA792 /* Frameworks */ = {
@@ -212,6 +234,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FD9749A1E3613080031CB3E /* Place.swift in Sources */,
+				3FD9749E1E3616C80031CB3E /* PlaceManager.swift in Sources */,
 				3F0B4B561E36074900D5B266 /* ViewController.swift in Sources */,
 				3F0B4B541E36074900D5B266 /* AppDelegate.swift in Sources */,
 			);
@@ -379,6 +403,7 @@
 				3F0B4B641E36074900D5B266 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
